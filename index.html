@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Instagram Feed</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row px-3 pt-3 bg-light">
+      <div class="col-9 pt-1">
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="text">
+          <p>
+          <h5>Instagram</h5>
+          </p>
+        </div>
+      </div>
+      <div class="col-3">
+        <ul class="nav nav-pills">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Create a new post</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">
+                        <p class="fw-semibold">Caption:</p>
+                      </label>
+                      <textarea class="form-control text-secondary"
+                        id="message-text">Add the caption of your post here</textarea>
+                      <i class="fa-solid fa-camera"></i>
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group ms-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item1" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+        aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+        aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content m-0" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+      <div class="container text-center">
+
+        <div class="row">
+          <div class="col mx-auto px-0">
+            <img
+              src="https://colegiodepsicologossj.com.ar/wp-content/uploads/donde-ver-pelicula-contacto-del-4-tipo.webp"
+              class="img-thumbnail" alt="..." style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+          <div class="col mx-auto px-0">
+            <img src="https://m.media-amazon.com/images/I/71jn-pXyvML._AC_UF894,1000_QL80_.jpg" class="img-thumbnail"
+              alt="..." style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+          <div class="col mx-auto px-0">
+            <img
+              src="https://m.media-amazon.com/images/S/pv-target-images/e4df224292360871bd268e77226ec2677b18d46007cce650844c7f787aac6a2f.jpg"
+              class="img-thumbnail" alt="..." style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col mx-auto px-0">
+            <img src="https://i.ebayimg.com/images/g/Hd8AAOSwhOBj0dP4/s-l1200.jpg" class="img-thumbnail" alt="..."
+              style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+          <div class="col mx-auto px-0">
+            <img src="https://pics.filmaffinity.com/Expediente_Warren_The_Conjuring-620173458-large.jpg"
+              class="img-thumbnail" alt="..." style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+          <div class="col mx-auto px-0">
+            <img src="https://es.web.img3.acsta.net/pictures/14/05/07/09/01/306626.jpg" class="img-thumbnail" alt="..."
+              style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col mx-auto px-0">
+            <img src="https://pics.filmaffinity.com/Hereditary-300556482-large.jpg" class="img-thumbnail" alt="..."
+              style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+          <div class="col mx-auto px-0">
+            <img src="https://musicart.xboxlive.com/7/59071400-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+              class="img-thumbnail" alt="..." style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+          <div class="col mx-auto px-0">
+            <img src="https://pics.filmaffinity.com/Mamaa-432435114-large.jpg" class="img-thumbnail" alt="..."
+              style="width: 450px; height: 450px; border: 0; p-0">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="card my-3" style="width: 30%;">
+        <div class="card-body py-2">
+          <div>
+            <h5 class="card-title mb-0">The Fourth Kind</h5>
+          </div>
+          <div class="card text-right text-secondary border-0"
+            style="width: auto; margin-inline-end: 0px; font-size: 80%;">
+            <p class="card-text"> 8/26</p>
+          </div>
+        </div>
+        <img src="https://colegiodepsicologossj.com.ar/wp-content/uploads/donde-ver-pelicula-contacto-del-4-tipo.webp"
+          class="card-img-top h-25" alt="...">
+        <div class="card-body mb-0 ps-16 pt-1 pb-0 ">
+          <p class="card-tex mb-0"><b>204 Likes</b></p>
+        </div>
+        <div class="card-body ps-16 pt-0 pb-3">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card my-3" style="width: 30%;">
+        <div class="card-body py-2">
+          <div>
+            <h5 class="card-title mb-0">Cloverfield</h5>
+          </div>
+          <div class="card text-right text-secondary border-0"
+            style="width: auto; margin-inline-end: 0px; font-size: 80%;">
+            <p class="card-text"> 9/26</p>
+          </div>
+        </div>
+        <img src="https://m.media-amazon.com/images/I/71jn-pXyvML._AC_UF894,1000_QL80_.jpg" class="card-img-top h-25"
+          alt="...">
+        <div class="card-body mb-0 ps-16 pt-1 pb-0 ">
+          <p class="card-tex mb-0"><b>514 Likes</b></p>
+        </div>
+        <div class="card-body ps-16 pt-0 pb-3">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card my-3" style="width: 30%;">
+        <div class="card-body py-2">
+          <div>
+            <h5 class="card-title mb-0">Alien: Covenant</h5>
+          </div>
+          <div class="card text-right text-secondary border-0"
+            style="width: auto; margin-inline-end: 0px; font-size: 80%;">
+            <p class="card-text"> 10/26</p>
+          </div>
+        </div>
+        <img
+          src="https://m.media-amazon.com/images/S/pv-target-images/e4df224292360871bd268e77226ec2677b18d46007cce650844c7f787aac6a2f.jpg"
+          class="card-img-top h-25" alt="...">
+        <div class="card-body mb-0 ps-16 pt-1 pb-0 ">
+          <p class="card-tex mb-0"><b>204 Likes</b></p>
+        </div>
+        <div class="card-body ps-16 pt-0 pb-3">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

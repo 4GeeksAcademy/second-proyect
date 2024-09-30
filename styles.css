@@ -1,0 +1,66 @@
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px transparent;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.nav-tabs {
+    border-bottom: 0px
+}
+.dropdown-divider{
+    color:darkgray;
+}
+.dropdown-item1 {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: red;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.col-9 i{
+    font-size: 30px;
+    margin-left: 50px;
+}
+.col-9{
+    height: 70px;
+    display: flex; 
+    margin: 0 auto;
+    justify-content: stretch;
+}
+
+.text{
+    display: flex;
+    justify-content: baseline;
+    padding-left: 5px;
+}
+.modal-body i{
+    border-color: silver;
+    margin-top: 15px;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;   
+    background-color: rgb(235, 235, 235);
+    height: 35px;
+    width: 40px;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    margin: 0 auto;
+}
+.card-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+   
